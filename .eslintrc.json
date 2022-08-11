@@ -1,0 +1,63 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "react/react-in-jsx-scope": "off",
+        "no-unreachable": "error",
+        "no-duplicate-imports": "error",
+        "no-unused-vars": "error",
+        "no-empty-function": "error",
+        "no-empty": "error",
+        "default-case": "error",
+        "no-console": "error",
+        "no-var": "error",
+        "no-multi-spaces": "error",
+        "arrow-spacing": "error",
+        "comma-spacing": "error",
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"],
+            "path": ["src"]
+          },
+          "typescript": {
+            "project": "."
+          }
+        },
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".tsx"]
+        }
+    }
+}
